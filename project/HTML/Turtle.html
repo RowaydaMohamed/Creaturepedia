@@ -3,17 +3,17 @@
 <head>
 	<meta charset="UTF-8">
     <title>Creaturepedia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
-     <link rel="icon" type="image/x-icon" href="logo-removebg.png">
+     <link rel="icon" type="image/x-icon" href="../Images/Creaturepedia.png">
 </head>
 <body class="bodyes">
         <header class="headeres">
                  <div class="navbares">
-        <img src="logo-removebg.png" alt="Logo" class="logoes">
-        <a href="#" class="nav-itemes">Home</a>
+        <img src="../Images/Creaturepedia.png" alt="Logo" class="logoes">
+        <a href="./Home.html" class="nav-itemes">Home</a>
         <a href="#" class="nav-itemes">About</a>
         <form action="#" class="search-formes">
             <input type="text" placeholder="Search..." class="search-bares">
@@ -26,7 +26,7 @@
 
 <h2 class="turtle_h2">WHO AM I?</h2>
 <div class="flash-cardes">
-        <img src="turtle2.png" alt="Flash Card Image" class="img_turtle">
+        <img src="../Images/turtle2.png" alt="Flash Card Image" class="img_turtle">
         <div class="textes">
 	<p>COMMON NAME: Green Sea Turtle.<br>
 	SCIENTIFIC NAME: Chelonia mydas.<br>
@@ -40,21 +40,21 @@
 
 
 <video width="320" height="240" controls class="swimming_turtle">
-  <source src="swimming_turtle.mp4" type="video/mp4">
+  <source src="../Media/swimming_turtle.mp4" type="video/mp4">
 </video>
 
 
 <p class="imges">
                
-                <img src="turtle1edited.png" alt="TurtleAudio" id="audioButton" style="float:left; cursor: pointer;" >
-                <audio id="audio" src="turtle_sound.mp3" preload="auto"></audio>
+                <img src="../Images/turtle1edited.png" alt="TurtleAudio" id="audioButtontuetle" style="float:left; cursor: pointer;" >
+                <audio id="audioturtle" src="../Media/turtle_sound.mp3" preload="auto"></audio>
 
                 
         </p>
 
 <script>
-const audio = document.getElementById('audio');
-const audioButton = document.getElementById('audioButton');
+const audio = document.getElementById('audioturtle');
+const audioButton = document.getElementById('audioButtontuetle');
 audioButton.addEventListener('click', function() {
   if (audio.paused) {
     audio.play();
@@ -111,7 +111,7 @@ audioButton.addEventListener('click', function() {
 
 <script>
   const button = document.getElementById('changeBgButton');
-const backgrounds = ['sea_background.png','sea_background4.jpg', 'sea_background3.jpg' ]; // Add your background image URLs here
+const backgrounds = ['../Images/sea_background.png','../Images/sea_background4.jpg', '../Images/sea_background3.jpg' ]; // Add your background image URLs here
 
 let currentIndex = 0;
 
@@ -126,7 +126,7 @@ button.addEventListener('click', () => {
   <div class="footeres">
             <a href="#" class="Ratinges">Give Us Your Feedback :)</a>
             <h3 class="contactes">Contact Us: </h3>
-            <img src="email.png" alt="Logo" class="gmailes">
+            <img src="../Images/email.png" alt="Logo" class="gmailes">
             <p class="emailes">creaturepedia@gmail.com</p> 
             
             
