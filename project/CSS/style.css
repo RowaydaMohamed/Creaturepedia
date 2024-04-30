@@ -3336,6 +3336,325 @@ input[type="password"] {
   margin: 20px;
 }
 
+/* rawan elph  */
+style.css
+.bodyra {
+    background-image: url('savanna.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+.headerra {
+  background-color: transparent;
+
+  }
+
+.search-buttonra {
+  padding: 8px 12px;
+  background-color: #51c77a; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-buttonra:hover {
+  background-color: #cc5500; 
+}
+.navbarra {
+  display: flex;
+  align-items: center;
+}
+
+.logora {
+  width: 100px;
+  height: auto;
+  margin-right: auto;
+  right:10px;
+}
+
+.nav-itemra {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+   font-weight:bold;
+}
+
+.nav-itemra:hover {
+  color: orange;
+}
+
+.search-formra {
+  display: flex;
+}
+
+.search-barra {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.jolly-lodgerra {
+  font-family: "Jolly Lodger", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  text-align: center;
+  transition: transform 0.3 ease;
+  text-align: center;
+  width: 300px;
+  position: relative;
+  left: 590px;
+}
+.jolly-lodgerra:hover{
+  transform: scale(1.1);
+  text-shadow: 2px 2px 4px rgba(17, 132, 17, 0.642);
+}
+.afr_ele_h3{
+  text-align: center;
+}
+.afr_ele_ta{
+  height: 130px;
+  width: 80% ;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  margin-top: 75px;
+  text-align:center;
+ }
+ .afr_ele_td{
+  border: 3px solid rgb(16, 82, 23);
+  border-collapse: collapse;
+  border-radius: 6px ;
+  height:50px;
+  font-size: 15px;
+
+ }
+ .sounddra{
+  position:relative;
+  top:-20px;
+}
+
+
+
+.afr_ele_td:hover{
+ background-color:rgb(255, 255, 255,0.5);
+}    
+.verra{
+  width: 300px; 
+  height: 320px; 
+  overflow: hidden;
+  font-size: large;
+  line-height: 1.5;
+  margin-left:200px ;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.behra{
+  margin-top: 50px;
+  margin-left: 200px;
+  width: 300px;
+  border-radius: 3px;
+  text-align: center;
+}
+.behra:hover,.verra:hover{
+  background-color: rgb(204, 204, 204,0.7);
+}
+
+.trunkra{
+  width: 600px;
+  height: 400px;
+  display: flex;
+  float: right;
+  position: relative;
+  bottom: 390px;
+  right: 100px;
+  border-radius:4px ;
+}
+.verrra{
+  width: 350px; 
+  height: 300px;
+  display: flex;
+  font-size: large;
+  line-height: 1.7;
+  border-radius: 3px;
+  text-align: center;
+  justify-content: center;
+}
+.dietra{
+  margin-top: 50px;
+  width: 350px;
+  border-radius: 3px;
+  text-align: center;
+}
+.dietra:hover,.verrra:hover{
+  background-color: rgb(204, 204, 204,0.7);
+}
+
+.allra{
+  position: relative;
+  float: right;
+  right: 270px;
+  bottom: 430px;
+}
+
+.elera{
+  width: 500px;
+  height: 400px;
+  margin-left: 150px;
+}
+
+
+
+.flash-cardra {
+  width: 380px; 
+  height: 480px;
+  border: 4px solid rgba(2, 61, 9, 0.815);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-left:120px;
+  margin-top:100px;
+  margin-bottom:0 ;
+  padding-bottom: 0;
+}
+
+.flash-cardra .textra {
+  padding: 10px;
+ /* text-align: center;*/
+  line-height: 1.7;
+  font-weight:bold;
+}
+.yarabra{
+  text-align: center;
+}
+.flash-cardra:hover{
+  background-color: #e1d8d8b0;
+}
+.locationra{
+  position: relative;
+  float: right;
+  bottom: 550px;
+  right: 70px;
+  margin-bottom:0 ;
+  padding-bottom: 0;
+  
+}
+
+.h3aera{
+  text-align: center;
+}
+.locationnnra{
+  border-radius: 10px;
+}
+
+.boxxra{
+  position: relative;
+  height: 10vh; 
+  top: 300px;
+  align-items: center; 
+  right: 400px;
+}
+.image-boxra {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px; 
+  height: 400px; 
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.image-boxra .imgra {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.image-boxra img.active {
+  display: block;
+}
+.Clickra{
+  padding: 10px 20px; 
+  font-size: 16px; 
+  background-color: #4CAF50; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+  position: relative;
+  left: 560px;
+  top: 250px;
+}
+.Clickra:hover{
+    background-color: #1d401f; 
+  }
+
+.iframera{
+  width: 500px;
+  height: 400px ;
+  float: right;
+  position: relative;
+  left: 420px;
+  top: 50px;
+}
+
+.footerra{
+  width: 97.5%;
+  background-color: rgb(7, 90, 11,0.5);
+  overflow: hidden;
+  height: 50px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  line-height: 20px; 
+  position: relative;
+  top: 100px;
+    color: white; 
+border-radius: 10px; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.contactra {
+  float: left;
+  margin-bottom: 100px;
+  margin-top: 10px;
+}
+.emailra {
+  color: #f1f1f1;
+  margin-bottom: 100px;
+  margin-top: 10px;
+}
+.gmailra {
+  float: left;
+  margin-right: 0px;
+  margin-bottom: 100px;
+  margin-top: 15px;
+  width: 30px;
+  height: 20px;
+}
+.Ratingra {
+  float: right;
+  margin-bottom: 100px;
+  margin-top: 15px;
+  margin-right: 100px;
+  margin-left: 100px;
+  color: #ffffff;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none; 
+  transition: color 0s;
+}
+.Ratingra:hover {
+  color: rgb(237, 244, 101);
+}
+
 
 
 

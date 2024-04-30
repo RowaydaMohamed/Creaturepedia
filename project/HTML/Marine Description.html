@@ -90,28 +90,22 @@
   <script>
     const text = "Click on the photos for more info.";
 
-// Function to display text with typing effect
 function displayTextWithTypingEffect() {
   const typingElement = document.getElementById("vtyping-effect");
   let index = 0;
 
-  // Function to add one character at a time with delay
   function addCharacter() {
     typingElement.textContent += text[index];
     index++;
 
-    // Check if all characters have been added
     if (index < text.length) {
-      // Set timeout for the next character
       setTimeout(addCharacter, 100); // Adjust the delay (in milliseconds) as needed
     }
   }
 
-  // Start typing effect
   addCharacter();
 }
 
-// Call the function to start the typing effect
 displayTextWithTypingEffect();
   </script>
 

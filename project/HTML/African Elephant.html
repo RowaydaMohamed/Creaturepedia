@@ -22,7 +22,9 @@
         </div>  
     </header>
 
-<h1>African Elephant</h1>
+<div class="sstext">
+    <h1 class="sheader1"> African Elephant </h1>
+  </div>
 <h3>"African elephants are the largest land animals on Earth."</h3>
 
 <table class="eletble">
@@ -115,13 +117,10 @@ function showNextImage() {
   images[currentIndex].classList.add('active');
 }
 
-// Show the first image when the page loads
 images[currentIndex].classList.add('active');
 
-// Find the button element
 const button = document.querySelector('button');
 
-// Add a click event listener to the button
 button.addEventListener('click', showNextImage);
 
     </script>

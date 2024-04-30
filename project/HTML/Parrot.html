@@ -9,10 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="logo.png">
     <script src="../JavaScript/script.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  var slides = document.querySelectorAll('.mslide');
+  var index = 0;
+
+  slides[index].style.display = 'block';
+
+  setInterval(function() {
+    slides[index].style.display = 'none';
+
+    index = (index + 1) % slides.length;
+
+    slides[index].style.display = 'block';
+  }, 3000);
+});
+
+var image = document.getElementById('parrot2');
+
+var audioPARROT = document.getElementById('parrotaudio');
+
+if(image)
+{image.addEventListener('click', function() {
+  audioPARROT.play();
+});}
+    </script>
 
 </head>
 <body class="m-body" >
-        <!-- <header class="m-header"> -->
           <header class="headerld">
             <div class="navbarld">
             <img src="../Images/Creaturepedia.png" alt="Logo" class="logold">
@@ -73,7 +97,6 @@
         </div>
     </div>
 
- <!-- <div id="mpar3" class="mtext"> -->
     <div id="mcaption1" class="mcaption1" onclick="toggleCaption()"> 
        <h3 class="mheader3">
         .Popularity as Pets:-
@@ -86,13 +109,16 @@
 <h4 class="mheader4">-Currently the Convention on International Trade in Endangered Species (CITES) bans the sale of any wild-caught species, yet the parrots' popularity continues to drive illegal trade.<br>
 
 <br> -Some parrot species are highly endangered. In other cases, once tame birds have reproduced in the wild and established thriving feral populations in foreign ecosystems. The monk (green) parakeet, for example, now lives in several U.S. states. </h4> </div>
-<!-- </div> -->
 
 
 
 <img id="parrot2" src="../Images/parrot2.png" alt="Click Me">
-<audio id="parrotaudio" src="../Media/parrot.mp3"></audio>
 <div id="parrot2c" class="mtext"> <h3> CLICK ON ME </h3> </div>
+  <audio controls>
+   <source src="../Media/parrot.mp3"
+    type="audio/mpeg">
+   </audio>
+</div>
 
 
     <div class="parrot3-container">

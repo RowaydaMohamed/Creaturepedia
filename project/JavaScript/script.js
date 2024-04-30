@@ -35,14 +35,12 @@ function loginAndValidate() {
       alert(`Welcome back, ${localStorage.getItem('username')}!`);
   }
 
-  // Perform any other actions or submit the form as needed
   return true;
 }
 
 function myFunction() {
     alert("Congratultions for being a human!\nWelcome to Creaturepedia – Where Curiosity Meets Discovery!");
   }
-// Get the audio and image elements by their IDs
 const audioOrca = document.getElementById('audio');
 const audioButton = document.getElementById('audioButton');
 
@@ -52,20 +50,14 @@ if(audioButton)
 audioButton.addEventListener('click', function() {
   // Check if audio is paused or not
   if (audioOrca.paused) {
-    // If audio is paused, play it
     audioOrca.play();
   } else {
-    // If audio is playing, pause it
     audioOrca.pause();
   }
 });
 }
 
-// function flipCard(card) {
-//     card.classList.toggle('flipped');
-//   }
-  
-// JavaScript logic to change background image
+
 const backgrounds = ['../Images/orcabackground3.jpeg', '../Images/sea_background.png'];
 let currentBackgroundIndex = 0;
 
@@ -87,9 +79,6 @@ function mOver(obj) {
   }
 
 
-  //  = "Click on the photos for more info.";
-
-  // Function to display text with typing effect
   function displayTextWithTypingEffect() {
     const typingElement = document.getElementById("vtyping-effect");
     let index = 0;
@@ -102,11 +91,6 @@ function mOver(obj) {
       index++;
       }
   
-      // Check if all characters have been added
-      // if const text(index < text.length) {
-      //   // Set timeout for the next character
-      //   setTimeout(addCharacter, 100); // Adjust the delay (in milliseconds) as needed
-      // }
     }
   
     // Start typing effect
@@ -142,41 +126,6 @@ function mOver(obj) {
 }
 
 
-// salma parrot2.js
-document.addEventListener("DOMContentLoaded", function() {
-  var slides = document.querySelectorAll('.mslide');
-  var index = 0;
-
-  // Show the first slide
-  slides[index].style.display = 'block';
-
-  // Change slide every 3 seconds
-  setInterval(function() {
-    // Hide the current slide
-    slides[index].style.display = 'none';
-
-    // Move to the next slide or start over if reached the end
-    index = (index + 1) % slides.length;
-
-    // Show the next slide
-    slides[index].style.display = 'block';
-  }, 3000);
-});
-
-// Get the image element
-var image = document.getElementById('parrot2');
-
-// Get the audio element
-var audioPARROT = document.getElementById('parrotaudio');
-
-// Add click event listener to the image
-if(image)
-{image.addEventListener('click', function() {
-  // Play the audio
-  audioPARROT.play();
-});}
-
-
 function toggleCaption() {
   var caption1 = document.getElementsByClassName('mcaption1')[0];
   var caption2 = document.getElementById('mcaption2');
@@ -197,7 +146,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Hide the current slide
     slides[index].style.display = 'none';
 
-    // Move to the next slide or start over if reached the end
     index = (index + 1) % slides.length;
 
     // Show the next slide
@@ -208,13 +156,11 @@ document.addEventListener("DOMContentLoaded", function() {
 //oct salma
 if(document.getElementById('image1'))
 image.addEventListener('mouseover', function() {
-  // Change the source of the image to image2.jpg on mouseover
   if(document.getElementById('image1'))
   document.getElementById('image1').src = '../Images/Oct2.png';
 });
 if(document.getElementById('image1'))
 image.addEventListener('mouseout', function() {
-  // Change the source back to the original source on mouseout
   if(document.getElementById('image1'))
   document.getElementById('image1').src = '../Images/Oct3.jpg';
 });
@@ -226,25 +172,19 @@ document.getElementById('playButton').addEventListener('click', function() {
   audioa.play();
 });
 
-  // Call the function to start the typing effect
   displayTextWithTypingEffect();
   document.addEventListener("DOMContentLoaded", function() {
     var slides = document.querySelectorAll('.mslide');
     var index = 0;
   
-    // Show the first slide
     if(document.querySelectorAll('.mslide'))
     {slides[index].style.display = 'block';
   
-    // Change slide every 3 seconds
     setInterval(function() {
-      // Hide the current slide
       slides[index].style.display = 'none';
   
-      // Move to the next slide or start over if reached the end
       index = (index + 1) % slides.length;
   
-      // Show the next slide
       slides[index].style.display = 'block';
     }, 3000);}
   });
