@@ -58,7 +58,7 @@ audioButton.addEventListener('click', function() {
 }
 
 
-const backgrounds = ['../Images/orcabackground3.jpeg', '../Images/sea_background.png'];
+const backgrounds = ['orcabackground3.jpeg', 'sea_background.png'];
 let currentBackgroundIndex = 0;
 
 // Function to change background image
@@ -157,12 +157,12 @@ document.addEventListener("DOMContentLoaded", function() {
 if(document.getElementById('image1'))
 image.addEventListener('mouseover', function() {
   if(document.getElementById('image1'))
-  document.getElementById('image1').src = '../Images/Oct2.png';
+  document.getElementById('image1').src = 'Oct2.png';
 });
 if(document.getElementById('image1'))
 image.addEventListener('mouseout', function() {
   if(document.getElementById('image1'))
-  document.getElementById('image1').src = '../Images/Oct3.jpg';
+  document.getElementById('image1').src = 'Oct3.jpg';
 });
 
 
