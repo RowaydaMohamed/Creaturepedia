@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Creaturepedia</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <img src="../Images/Creaturepedia.png" alt="Logo" class="logo">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About</a>
+        <form action="#" class="search-form">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div> 
+    <main>
+        <div class="quiz-container">
+            <h2 class="quiz-title">Parrots Quiz</h2>
+            <div class="question">What is the average lifespan of a parrot in captivity?</div>
+            <div class="options-container">
+                <div class="option" data-answer="false">10-20 years</div>
+                <div class="option" data-answer="false">20-30 years</div>
+                <div class="option" data-answer="true">30-40 years</div>
+                <div class="option" data-answer="false">40-50 years</div>
+            </div>
+            <button class="submit-btn">Submit</button>
+            <p class="feedback"></p>
+        </div>
+        <div class="quiz-container">
+            <h2 class="quiz-title">Eagles Quiz</h2>
+            <div class="question">How do eagles build their nests?</div>
+            <div class="options-container">
+                <div class="option" data-answer="true">By weaving sticks together</div>
+                <div class="option" data-answer="false">By digging holes in trees</div>
+                <div class="option" data-answer="false">By using mud and grass</div>
+                <div class="option" data-answer="false">By using abandoned nests of other birds</div>
+            </div>
+            <button class="submit-btn">Submit</button>
+            <p class="feedback"></p>
+        </div>
+        <!-- Similar structure for Atlantic Puffins Quiz and Penguins Quiz -->
+    </main>
+    <footer>
+        <p>Contact us: creaturepedia@gmail.com</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const submitButtons = document.querySelectorAll('.submit-btn');
+            const feedbackElements = document.querySelectorAll('.feedback');
+
+            // Add click event listeners to all submit buttons
+            submitButtons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    const options = document.querySelectorAll(`.quiz-container:nth-child(${index + 1}) .option`);
+                    const selectedOption = Array.from(options).find(option => option.classList.contains('selected'));
+                    const isCorrect = selectedOption.getAttribute('data-answer') === 'true';
+                    const feedbackElement = feedbackElements[index];
+
+                    if (isCorrect) {
+                        feedbackElement.textContent = 'Correct!';
+                    } else {
+                        feedbackElement.textContent = 'Wrong! Try again.';
+                    }
+                });
+            });
+
+            // Add click event listeners to all options
+            const options = document.querySelectorAll('.option');
+            options.forEach(option => {
+                option.addEventListener('click', () => {
+                    options.forEach(opt => opt.classList.remove('selected'));
+                    option.classList.add('selected');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

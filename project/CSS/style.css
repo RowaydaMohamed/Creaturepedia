@@ -24,6 +24,7 @@ display: flex;
 align-items: center;
 }
 
+
 .logo {
 width: 100px;
 height: auto;
@@ -131,20 +132,23 @@ h1 {
   height: 45%; /* Maintain aspect ratio */
   max-width: 100%; /* Prevent image overflow */
 }
-.footer{
+.footer {
   width: 97.5%;
-  background-color: #4FA8DB;
+  background-color:#6fa7db; 
   overflow: hidden;
-  height: 50px; /* Adjust the height as needed */
-  padding: 20px 20px; /* Adjust the padding */
-  font-size: 18px; /* Adjust the font size */
-  line-height: 30px; /* Adjust the line height */
-  
+  height: 50px;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  line-height: 20px; 
+  color: white; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 .contact {
   float: left;
   margin-bottom: 100px;
   margin-top: 10px;
+  color: #000;
 }
 .email {
   color: #000000;
@@ -182,10 +186,17 @@ h1 {
 .jolly-lodger-regular {
   margin-bottom: 0%;
 }
+.orca-sound {
+  color:#f1f1f1;
+}
 .orca-img {
   width: 400px;
   height: auto;
   margin-bottom: 20px;
+}
+.myVideo {
+  font-size: large;
+  color: #ccc;
 }
 #myVideo {
   width: 40%;
@@ -270,4 +281,41 @@ td:hover {
   margin: 0; /* Remove default margin */
   color: black; /* Set text color */
   text-align: center; /* Center-align the text */
+}
+.birds-background {
+  background-image: url('../Images/leaves background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.img-map {
+  width: 35%;
+  height: 450px;
+  float: left;
+  margin-top: 5S0px;
+  margin-bottom: 150px;
+}
+.iframe {
+  float: right;
+  width: 35%;
+  height: 450px;
+}
+.avian-menu {
+  color: yellow;
+  text-decoration: underline;
+}
+.labels {
+  font-weight: bold;
+  font-size: medium;
+  padding: 15px;
+  text-align: center;
+}
+.avian-greeting {
+  width: 500px;
+  height: 80px;
+  margin-top: 20px;
+  background-color: #6a9a3d;
+  cursor: pointer;
+  color: #f0f0f0;
+  font-size: large;
 }
