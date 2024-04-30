@@ -3,18 +3,18 @@
 <head>
 	<meta charset="UTF-8">
     <title>Creaturepedia</title>
-    <link rel="stylesheet" href="SalmaAshraf Octopus.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="../Images/Creaturepedia.png">
 
 </head>
 <body class="s-body">
         <header class="s-header" >
                  <div class="navbar">
-        <img src="logo.png" alt="Logo" class="logo">
-        <a href="#" class="nav-item">Home</a>
+        <img src="../Images/Creaturepedia.png" alt="Logo" class="logo">
+        <a href="../HTML/Home.html" class="nav-item">Home</a>
         <a href="#" class="nav-item">About</a>
         <form action="#" class="search-form">
             <input type="text" placeholder="Search..." class="search-bar">
@@ -57,12 +57,17 @@
 <div class="stext">
    <h1 class="sheader1"> Take a quick look.. </h1>
    </div>
+   <audio controls>
+    <source src="../Media/Octopus.mp3"
+     type="audio/mpeg">
+    </audio>
+    <button id="playButton" class="scolorful-button"> Octopus Sound</button>
 
  
 <div class="sflip-card">
   <div class="sflip-card-inner">
     <div class="sflip-card-front">
-      <img src="oct.png" alt="Octopus Image" style="width:300px;height:300px;" class="soct">
+      <img src="../Images/oct.png" alt="Octopus Image" style="width:300px;height:300px;" class="soct">
     </div>
     <div class="sflip-card-back">
       <h2>Octopus Facts</h2>
@@ -78,34 +83,30 @@
 
 <div id="svideoContainer" draggable="true">
   <video width="500" controls>
-    <source src="Octopus.mp4" type="video/mp4" class="soctvid">
+    <source src="../Media/Octopus.mp4" type="video/mp4" class="soctvid">
   </video>
 </div>
 
-<div id="siframe" style="text-align:center;"><h3 class"sheader1"> HERE'S MORE INFO ABOUT OCTOPUS. </h3>
-    <iframe src="https://www.nationalgeographic.com/animals/invertebrates/facts/common-octopus" width="600" height="300" frameborder="0" allowfullscreen></iframe>
+<div id="siframe" style="text-align:center;"><h3 class="sheader1"> HERE'S MORE INFO ABOUT OCTOPUS. </h3>
+    <iframe src="https://www.nationalgeographic.com/animals/invertebrates/facts/common-octopus" width="700px" height="300" frameborder="0" allowfullscreen></iframe>
 </div>
+
+
 
 <div id="simageContainer">
-  <img id="image1" class="simage" src="Oct3.jpg" alt="Image 1">
+  <img id="image1" class="simage" src="../Images/Oct3.jpg" alt="Image 1">
 </div>
 
-
-<audio id="audio" src="Octopus.mp3" class="saudio"></audio>
-
-<div>
-<button id="playButton" class="scolorful-button"> Octopus Sound</button>
-</div>
 
 
  <div class="sfooter">
             <a href="#" class="sRating">Rating</a>
             <h3 class="scontact">Contact Us: </h3>
-            <img src="email.png" alt="Logo" class="sgmail">
-            <p class="semail">creaturepedia@gmail.com">
+            <img src="../Images/email.png" alt="Logo" class="sgmail">
+            <p class="semail">creaturepedia@gmail.com</p>
      </div> 
 
 
-<script src="SalmaAshraf Octopus.js"></script>
+<script src="../JavaScript/script.js"></script>
 </body>
 </html>

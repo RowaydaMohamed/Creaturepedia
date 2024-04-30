@@ -2679,3 +2679,243 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 .video-text {
   font-size: 30px;
 }
+
+/* salma oct */
+.s-body {
+  background-image: url('../Images/sea_background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+.s-header {
+background-color: transparent;
+}
+
+.search-button {
+padding: 8px 12px;
+background-color: #51c77a; 
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+background-color: #cc5500; 
+}
+.navbar {
+display: flex;
+align-items: center;
+}
+
+.logo {
+width: 100px;
+height: auto;
+margin-right: auto;
+right:10px;
+}
+
+.nav-item {
+margin-right: 20px;
+text-decoration: none;
+color: #333;
+transition: color 0.3s ease;
+ font-weight:bold;
+}
+
+.nav-item:hover {
+color: orange;
+}
+
+.search-form {
+display: flex;
+}
+
+.search-bar {
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-right: 10px;
+}
+
+.sstext {
+text-align-last: center;
+font-family: "Jolly Lodger", system-ui;
+font-weight: 400;
+font-style: normal;
+font-size:20px;
+}
+
+.stable {
+width: 40%; 
+border-collapse: collapse;
+}
+
+.stitle, .scontent {
+padding: 3px;
+border: 3px solid #ccc;         
+}
+
+.stitle {
+font-weight: bold;
+width: 20%; 
+}
+
+tr:hover {
+background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+transition: background-color 0.3s ease;
+}
+
+
+#svideoContainer {
+  position: absolute;
+  top: 70%;
+  left:70%;
+  transform: translate(-50%,-50%);
+  cursor : move;
+}
+
+#siframe {
+position: absolute;
+top: 118%;
+left: 30%;
+}
+
+
+
+
+.stext{
+ font-family: "Brush Script MT", cursive;
+ position: absolute ;
+ color: white;
+ top: 110% ;
+ right: 5%;
+ text-shadow: 2px 2px 5px red;
+ animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+50% {
+  color: blue;
+}
+}
+
+
+.sflip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 350px;
+
+  margin-top: 80px;
+  margin-right: 10px;
+  margin-left:1030px;
+}
+
+.sflip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sflip-card:hover .sflip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.sflip-card-front, .sflip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.sflip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+.sflip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.simage {
+width: 300px;
+height:  300px;
+position:absolute;
+left: 5%;
+top:122%;
+}
+
+
+.scolorful-button {
+padding: 20px 50px;
+border: none;
+border-radius: 50px; 
+cursor: pointer;
+transition: all 0.3s ease; 
+color: green;
+background-color:#98bbf5;
+position:absolute;
+left: 8%;
+top: 112%;
+ }
+
+
+
+.scolorful-button:hover {
+opacity: 0.8; 
+}
+
+.sfooter{
+position: absolute;
+top: 175%;
+width: 96.4%;
+border-radius: 10px;
+background-color: #4FA8DB;
+overflow: hidden;
+height: 50px; 
+padding: 20px 20px; 
+font-size: 18px; 
+line-height: 30px;   
+}
+.scontact {
+float: left;
+margin-bottom: 100px;
+margin-top: 10px;
+}
+.semail {
+color: #000000;
+margin-bottom: 100px;
+margin-top: 10px;
+}
+.sgmail {
+float: left;
+margin-right: 0px;
+margin-bottom: 100px;
+margin-top: 15px;
+width: 30px;
+height: 20px;
+}
+.sRating {
+float: right;
+margin-bottom: 100px;
+margin-top: 15px;
+margin-right: 100px;
+margin-left: 100px;
+color: #000;
+font-size: larger;
+font-weight: bold;
+text-decoration: none; 
+transition: color 0s;
+}
+.sRating:hover {
+color: red;
+}
+
