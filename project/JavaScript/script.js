@@ -43,7 +43,7 @@ function myFunction() {
     alert("Congratultions for being a human!\nWelcome to Creaturepedia – Where Curiosity Meets Discovery!");
   }
 // Get the audio and image elements by their IDs
-const audio = document.getElementById('audio');
+const audioOrca = document.getElementById('audio');
 const audioButton = document.getElementById('audioButton');
 
 // Add click event listener to the image
@@ -51,12 +51,12 @@ if(audioButton)
 {
 audioButton.addEventListener('click', function() {
   // Check if audio is paused or not
-  if (audio.paused) {
+  if (audioOrca.paused) {
     // If audio is paused, play it
-    audio.play();
+    audioOrca.play();
   } else {
     // If audio is playing, pause it
-    audio.pause();
+    audioOrca.pause();
   }
 });
 }
@@ -76,6 +76,7 @@ function changeBackground() {
 }
 
 // Add event listener to the button
+if(document.getElementById('various-backgrounds'))
 document.getElementById('various-backgrounds').addEventListener('click', changeBackground);
 function mOver(obj) {
   obj.innerHTML = "Polar bears are actually black,It only looks white because it reflects visible light, This allows them to blend into their surroundings and catch unsuspecting seals."
@@ -95,8 +96,11 @@ function mOver(obj) {
   
     // Function to add one character at a time with delay
     function addCharacter() {
+      if(typingElement)
+      {
       typingElement.textContent += text[index];
       index++;
+      }
   
       // Check if all characters have been added
       // if const text(index < text.length) {
@@ -109,27 +113,7 @@ function mOver(obj) {
     addCharacter();
   }
   
-  // Call the function to start the typing effect
-  displayTextWithTypingEffect();
-  document.addEventListener("DOMContentLoaded", function() {
-    var slides = document.querySelectorAll('.mslide');
-    var index = 0;
-  
-    // Show the first slide
-    slides[index].style.display = 'block';
-  
-    // Change slide every 3 seconds
-    setInterval(function() {
-      // Hide the current slide
-      slides[index].style.display = 'none';
-  
-      // Move to the next slide or start over if reached the end
-      index = (index + 1) % slides.length;
-  
-      // Show the next slide
-      slides[index].style.display = 'block';
-    }, 3000);
-  });
+
 
   function my2ndFunction() {
     alert("Hi There! Dive into the vibrant world of avian species through mesmerizing courtship displays, graceful gliding flights, and epic migratory journeys.  ");
@@ -186,10 +170,11 @@ var image = document.getElementById('parrot2');
 var audioPARROT = document.getElementById('parrotaudio');
 
 // Add click event listener to the image
-image.addEventListener('click', function() {
+if(image)
+{image.addEventListener('click', function() {
   // Play the audio
   audioPARROT.play();
-});
+});}
 
 
 function toggleCaption() {
@@ -221,28 +206,48 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //oct salma
-var image = document.getElementById('image1');
-var image1Path = '../Images/Oct3.jpg';
-var image2Path = '../Images/Oct2.png';
-var originalSrc = image.src;
-
-
+if(document.getElementById('image1'))
 image.addEventListener('mouseover', function() {
   // Change the source of the image to image2.jpg on mouseover
+  if(document.getElementById('image1'))
   document.getElementById('image1').src = '../Images/Oct2.png';
 });
-
+if(document.getElementById('image1'))
 image.addEventListener('mouseout', function() {
   // Change the source back to the original source on mouseout
+  if(document.getElementById('image1'))
   document.getElementById('image1').src = '../Images/Oct3.jpg';
 });
 
 
-
+if(document.getElementById('playButton'))
 document.getElementById('playButton').addEventListener('click', function() {
-  var audio = document.getElementById('audiooct');
-  audio.play();
+  var audioa = document.getElementById('audiooct');
+  audioa.play();
 });
+
+  // Call the function to start the typing effect
+  displayTextWithTypingEffect();
+  document.addEventListener("DOMContentLoaded", function() {
+    var slides = document.querySelectorAll('.mslide');
+    var index = 0;
+  
+    // Show the first slide
+    if(document.querySelectorAll('.mslide'))
+    {slides[index].style.display = 'block';
+  
+    // Change slide every 3 seconds
+    setInterval(function() {
+      // Hide the current slide
+      slides[index].style.display = 'none';
+  
+      // Move to the next slide or start over if reached the end
+      index = (index + 1) % slides.length;
+  
+      // Show the next slide
+      slides[index].style.display = 'block';
+    }, 3000);}
+  });
 
 
 
