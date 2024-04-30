@@ -47,6 +47,8 @@ const audio = document.getElementById('audio');
 const audioButton = document.getElementById('audioButton');
 
 // Add click event listener to the image
+if(audioButton)
+{
 audioButton.addEventListener('click', function() {
   // Check if audio is paused or not
   if (audio.paused) {
@@ -57,6 +59,8 @@ audioButton.addEventListener('click', function() {
     audio.pause();
   }
 });
+}
+
 // function flipCard(card) {
 //     card.classList.toggle('flipped');
 //   }
@@ -225,12 +229,12 @@ var originalSrc = image.src;
 
 image.addEventListener('mouseover', function() {
   // Change the source of the image to image2.jpg on mouseover
-  image.src = image2Path;
+  document.getElementById('image1').src = '../Images/Oct2.png';
 });
 
 image.addEventListener('mouseout', function() {
   // Change the source back to the original source on mouseout
-  image.src = originalSrc;
+  document.getElementById('image1').src = '../Images/Oct3.jpg';
 });
 
 
