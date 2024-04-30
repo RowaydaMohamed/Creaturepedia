@@ -133,7 +133,7 @@
       padding: 20px;
     }
     
-  /* footer{
+  .penfooter{
       width: 97.5%;
       background-color: #4FA8DB;
       overflow:visible;
@@ -142,20 +142,20 @@
       font-size: 18px; 
       line-height: 30px; 
       
-  } */
-  .contact {
+  }
+  .pencontact {
       float: left;
       margin-bottom: 100px;
       margin-top: 10px;
   }
-  .email {
+  .penemail {
       background-color: #4FA8DB;
       color: #000000;
       margin-bottom: 100px;
       margin-top: 10px;
   }
 
-  .gmail {
+  .pengmail {
       float: left;
       margin-right: 0px;
       margin-bottom: 100px;
@@ -163,7 +163,7 @@
       width: 30px;
       height: 20px;
   }
-  .Rating {
+  .penRating {
       float: right;
       margin-bottom: 100px;
       margin-top: 15px;
@@ -175,7 +175,7 @@
       text-decoration: none; 
       transition: color 0s;
   }
-  .Rating:hover {
+  .penRating:hover {
       color: red;
   }
 
