@@ -119,7 +119,7 @@
       margin-top: 60px;
     }
     
-    video {
+    .penvideo {
       width: 80%;
       max-width: 600px;
     }
@@ -133,16 +133,16 @@
       padding: 20px;
     }
     
-  footer{
+  /* footer{
       width: 97.5%;
       background-color: #4FA8DB;
       overflow:visible;
-      height: 50px; /* Adjust the height as needed */
-      padding: 20px 20px; /* Adjust the padding */
-      font-size: 18px; /* Adjust the font size */
-      line-height: 30px; /* Adjust the line height */
+      height: 50px; 
+      padding: 20px 20px; 
+      font-size: 18px; 
+      line-height: 30px; 
       
-  }
+  } */
   .contact {
       float: left;
       margin-bottom: 100px;
@@ -410,7 +410,7 @@ h1 {
   width: 50%;
 }
 
-td {
+.orcatd {
   border: 1px solid black;
   padding: 20px;
   width: 100px;
@@ -418,7 +418,7 @@ td {
   text-align: left;
   perspective: 1000px; /* Add perspective for 3D effect */
 }
-td:hover {
+.orcatd:hover {
   background-color: #d0ede1;
 }
 .map {
@@ -1047,18 +1047,18 @@ header {
   height: 20px;
   background-color: #4fdb85;
 }
-/* .custom-body-polarbear {
+.custom-body-polarbear {
   margin: 0;
   padding: 0;
   background-image: url('../Images/polar\ bear\ back\ ground.jpg'); 
   background-size: cover;
-  /* background-position: center; */
-  /* background-attachment: fixed;
+  background-position: center;
+   background-attachment: fixed;
   height: 100vh;
   display: flex;
-  background-repeat: no-repeat; /* Prevent background image from repeating */
-  /*flex-direction: column; /* Ensure the body uses flexbox in column direction */
-/*} */
+  background-repeat: no-repeat; 
+  flex-direction: column;
+}
 
 .bearheader {
   position: fixed; /* Fixed positioning to stick to the top */
@@ -1079,7 +1079,7 @@ header {
 .right-sectionO video{
   margin-top: 60px; 
 }
-caption {
+.bearcaption {
   color: #192f9d;
   font-weight: 800;
   font-size: larger;
@@ -1091,7 +1091,7 @@ caption {
 
 
 /* Additional styles for the table */
-  bear-table {
+  .bear-table {
   background-color: rgba(255, 255, 255, 0.8);
   float: left;
   margin-right:30px;
@@ -1116,28 +1116,28 @@ caption {
   } 
 
 
-  footer{
+  .bearfooter{
       width: 97.5%;
       background-color: #4FA8DB;
 
       overflow:visible;
-      height: 50px; /* Adjust the height as needed */
-      padding: 20px 20px; /* Adjust the padding */
-      font-size: 18px; /* Adjust the font size */
-      line-height: 30px; /* Adjust the line height */
+      height: 50px;
+      padding: 20px 20px; 
+      font-size: 18px;
+      line-height: 30px; 
       
   }
-  .contact {
+  .bearcontact {
       float: left;
       margin-bottom: 100px;
       margin-top: 10px;
   }
-  .email {
+  .bearemail {
       color: #000000;
       margin-bottom: 100px;
       margin-top: 10px;
   }
-  .gmail {
+  .beargmail {
       float: left;
       margin-right: 0px;
       margin-bottom: 100px;
@@ -1145,7 +1145,7 @@ caption {
       width: 30px;
       height: 20px;
   }
-  .Rating {
+  .bearRating {
       float: right;
       margin-bottom: 100px;
       margin-top: 15px;
@@ -1157,7 +1157,7 @@ caption {
       text-decoration: none; 
       transition: color 0s;
   }
-  .Rating:hover {
+  .bearRating:hover {
       color: red;
   } */
   
@@ -1640,7 +1640,7 @@ text-align: center;
   font-size: 16px; 
   line-height: 20px; 
   position: relative;
-  /* top: 100px; */
+   top: 100px; 
     color: white; 
 border-radius: 10px; 
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1743,7 +1743,7 @@ margin-right: 10px;
 h1,h3{
 text-align: center;
 }
-/* table{
+.eletble{
 height: 130px;
 width: 80% ;
 justify-content: center;
@@ -1751,14 +1751,13 @@ align-items: center;
 margin-left: 150px;
 margin-top: 75px;
 text-align:center;
-} */
-td{
+}
+.eletd{
 border: 3px solid rgb(16, 82, 23);
 border-collapse: collapse;
 border-radius: 6px ;
 height:50px;
 font-size: 15px;
-
 }
 .soundd{
 position:relative;
@@ -1767,7 +1766,7 @@ top:-20px;
 
 
 
-td:hover{
+.eletd:hover{
 background-color:rgb(255, 255, 255,0.5);
 }    
 .ver{
@@ -1834,8 +1833,6 @@ width: 500px;
 height: 400px;
 margin-left: 150px;
 }
-
-
 
 .flash-card {
 width: 380px; 
@@ -1916,58 +1913,6 @@ top: 250px;
 }
 .Click:hover{
   background-color: #1d401f; 
-}
-
-
-
-.footer{
-width: 97.5%;
-background-color: rgb(7, 90, 11,0.5);
-overflow: hidden;
-height: 50px; 
-padding: 10px 20px; 
-font-size: 16px; 
-line-height: 20px; 
-position: relative;
-top: 100px;
-  color: white; 
-border-radius: 10px; 
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.contact {
-float: left;
-margin-bottom: 100px;
-margin-top: 10px;
-}
-.email {
-color: #000000;
-margin-bottom: 100px;
-margin-top: 10px;
-}
-.gmail {
-float: left;
-margin-right: 0px;
-margin-bottom: 100px;
-margin-top: 15px;
-width: 30px;
-height: 20px;
-}
-.Rating {
-float: right;
-margin-bottom: 100px;
-margin-top: 15px;
-margin-right: 100px;
-margin-left: 100px;
-color: #000;
-font-size: larger;
-font-weight: bold;
-text-decoration: none; 
-transition: color 0s;
-}
-.Rating:hover {
-color: red;
 }
 
 /*-----------------salma ash-------------*/
@@ -2584,4 +2529,153 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .Ratingld:hover {
   color: rgb(237, 242, 100);
+}
+/*-------zeiad giraffe---------*/
+.giraffebody {
+  background: linear-gradient(270deg, #FFA500 0%, #B3C68B 100%);
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  
+}
+
+.giheader {
+  background-color: transparent;
+}
+
+.search-button {
+  padding: 8px 12px;
+  background-color: #32CD32;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #cc5500;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: auto;
+}
+
+.nav-item {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #666;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-bar {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.gfootercontiner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.gfooter {
+  width: 97.5%;
+  background-color: #32CD32; 
+  overflow: hidden;
+  height: 50px;
+  padding: 5px 20px; 
+  font-size: 16px; 
+  line-height: 20px; 
+  color: white; 
+  border-radius: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  top:500px;
+  position: relative;
+  
+}
+
+.gcontact {
+  color: #000000;
+  float: left;
+  margin-bottom: 100px;
+  margin-top: 10px;
+}
+
+.gemail {
+  color: #000000;
+  margin-bottom: 100px;
+  margin-top: 10px;
+}
+
+.ggmail {
+  float: left;
+  margin-right: 0px;
+  margin-bottom: 100px;
+  margin-top: 15px;
+  width: 30px;
+  height: 20px;
+}
+
+.gRating {
+  float: right;
+  margin-bottom: 100px;
+  margin-top: 15px;
+  margin-right: 100px;
+  margin-left: 100px;
+  color: #000;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0s;
+  
+}
+
+.gRating:hover {
+  color: red;
+}
+
+.smooth-edge {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-radius 0.3s ease;
+}
+
+.smooth-edge:hover {
+  border-radius: 20px;
+}
+
+.video-container {
+  position: absolute;
+  top: 130%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+.image-link {
+  position: absolute;
+  top: 103%;
+  bottom: 50%;
+  right: 72%; 
+  transform: translateX(-50%);
+}
+.video-text {
+  font-size: 30px;
 }
