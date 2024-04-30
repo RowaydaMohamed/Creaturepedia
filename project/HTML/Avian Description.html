@@ -12,7 +12,7 @@
 <body class="birds-background">
     <div class="navbar">
         <img src="../Images/Creaturepedia.png" alt="Logo" class="logo">
-        <a href="./index.html" class="nav-item">Home</a>
+        <a href="./Home.html" class="nav-item">Home</a>
         <a href="#" class="nav-item">About</a>
         <form action="#" class="search-form">
             <input type="text" placeholder="Search..." class="search-bar">
@@ -24,8 +24,8 @@
     <img class="img-map" src="../Images/birds.png" alt="Workplace" usemap="#workmap">
 
     <map name="workmap">
-        <area shape="rect" coords="20, 185, 130, 430" alt="" href="./index.html">
-        <area shape="rect" coords="120,10,175,180" alt="" href="./login.html">
+        <area shape="rect" coords="20, 185, 130, 430" alt="" href="./Penguin.html">
+        <area shape="rect" coords="120,10,175,180" alt="" href="./Parrot.html">
         <area shape="rect" coords="230,160,335,420" alt="" href="./Eagle.html">
         <area shape="circle" coords="450, 215, 90" href="" alt="">
     </map>
@@ -44,25 +44,24 @@
     </dl>
     <button class="avian-greeting" onclick="my2ndFunction()">If you find your interest in the sky, click here!</button>
 
-<p id="demo"></p>
-
-<script>
-function my2ndFunction() {
-  var txt;
-  if (confirm("Hi there! Let's dive into the vibrant world of avian species through graceful gliding flights, and epic migratory journeys.")) {
-    txt = "";
-  } else {
-    txt = "";
-  }
-  document.getElementById("demo").innerHTML = txt;
-}
-</script>
-
-    <div class="footer">
+    <p id="demo"></p>   
+    <div class="avfooter">
         <a href="#" class="Rating">Rating</a>
-        <h3 class="contact">Contact Us: </h3>
-        <img src="../Images/email.png" alt="Logo" class="gmail">
-        <p class="email">creaturepedia@gmail.com</p>     
+        <h3 class="avcontact">Contact Us: </h3>
+        <img src="../Images/email.png" alt="Logo" class="avgmail">
+        <p class="avemail">creaturepedia@gmail.com</p>     
     </div> 
+    <script>
+        function my2ndFunction() {
+          var txt;
+          if (confirm("Hi there! Let's dive into the vibrant world of avian species through graceful gliding flights, and epic migratory journeys.")) {
+            txt = "";
+          } else {
+            txt = "";
+          }
+          document.getElementById("demo").innerHTML = txt;
+        }
+        </script>
+    
 </body>
 </html>

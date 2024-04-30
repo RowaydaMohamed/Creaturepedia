@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Feedback</title>
+    <style>
+        .feedbackS {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('../Images/15082_2-24882.jpg'); /'Games/15082_2-24882.jpg'/
+            background-size: cover;
+            background-position: center;
+        }
+        .containerSaged {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 30px;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+        }
+        .headerFeedback {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 0;
+            font-weight:bold ;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #3edb1e;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 30px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            position:relative;
+            left:300px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body class="feedbackS">
+    <div class="containerSaged">
+        <h1 class="headerFeedback" style="font-size:50px"><pre>𝐅𝐞𝐞𝐝𝐛𝐚𝐜𝐤</pre></h1>
+        <form action="submit_feedback.php" method="post">
+            <label for="animal_name">Animal name:</label>
+            <input type="text" id="animal_name" name="animal_name" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="𝓕𝓮𝓮𝓭𝓫𝓪𝓬𝓴" rows="5" required></textarea>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Page</title>
+    <style>
+        #logo-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            cursor: pointer; 
+        }
+
+        
+        #logo-img {
+            width: 100px; 
+            height: auto; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a id="logo-container" href="./index.html">
+        <img id="logo-img" src="../Images/Creaturepedia.png" alt="Logo">
+    </a>
+    
+</header>
+</body>
+</html>
