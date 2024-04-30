@@ -172,3 +172,25 @@ function toggleCaption() {
   caption1.classList.toggle('hidden');
   caption2.classList.toggle('hidden');
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  var slides = document.querySelectorAll('.mslide');
+  var index = 0;
+
+  // Show the first slide
+  slides[index].style.display = 'block';
+
+  // Change slide every 3 seconds
+  setInterval(function() {
+    // Hide the current slide
+    slides[index].style.display = 'none';
+
+    // Move to the next slide or start over if reached the end
+    index = (index + 1) % slides.length;
+
+    // Show the next slide
+    slides[index].style.display = 'block';
+  }, 3000);
+});
+
+
