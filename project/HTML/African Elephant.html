@@ -13,7 +13,7 @@
         <header>
                  <div class="navbar">
         <img src="../Images/Creaturepedia.png" alt="Logo" class="logo">
-        <a href="./index.html" class="nav-item">Home</a>
+        <a href="./Home.html" class="nav-item">Home</a>
         <a href="#" class="nav-item">About</a>
         <form action="#" class="search-form">
             <input type="text" placeholder="Search..." class="search-bar">
@@ -96,8 +96,6 @@
         </div>
       <button class="Click" onclick="showNextImage()">To Show Me in My Age Stages, Just Click</button>
     </div>
-      <script src="../JavaScript/elephant.js"></script>
-
 
     <div class="footerld">
         <a href="#" class="Ratingld">Give Us Your Feedback :)</a>
@@ -105,6 +103,27 @@
         <img src="../Images/email.png" alt="Logo" class="elegmail">
         <p class="emailld">creaturepedia@gmail.com</p> 
     </div>  
-    
+    <script>
+        //elephant
+let currentIndex = 0;
+const images = document.querySelectorAll('.image-box img');
+
+function showNextImage() {
+  console.log("called")
+  images[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + 1) % images.length;
+  images[currentIndex].classList.add('active');
+}
+
+// Show the first image when the page loads
+images[currentIndex].classList.add('active');
+
+// Find the button element
+const button = document.querySelector('button');
+
+// Add a click event listener to the button
+button.addEventListener('click', showNextImage);
+
+    </script>
 </body>
 </html>
