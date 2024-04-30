@@ -182,8 +182,8 @@
 <body class="feedbackS">
     <header class="headersf">
         <div class="navbarsf">
-<img src="logo f.png" alt="Logo" class="logosf">
-<a href="#" class="nav-itemsf">Home</a>
+<img src="../Images/Creaturepedia.png" alt="Logo" class="logosf">
+<a href="./Home.html" class="nav-itemsf">Home</a>
 <a href="#" class="nav-itemsf">About</a>
 <form action="#" class="search-formsf">
    <input type="text" placeholder="Search..." class="search-barsf">
@@ -194,31 +194,32 @@
 
 <div class="containerSaged">
     <h1 class="headerFeedback"><pre>𝐅𝐞𝐞𝐝𝐛𝐚𝐜𝐤</pre></h1>
-    <form action="submit_feedback.php" method="post">
+    <form action="./Home.html" method="post">
         <label for="animal_name">Animal name:</label>
         <input type="text" id="animal_name" name="animal_name" required>
 
         <label for="feedback">Feedback:</label>
         <textarea id="feedback" name="𝓕𝓮𝓮𝓭𝓫𝓪𝓬𝓴" rows="5" required></textarea>
 
-        <input type="submit" value="Submit Feedback" id="thankyoubutton">
+        <input type="submit" value="Submit Feedback" id="thankyoubutton" onclick="alert('Thank you for your feedback :D')">
     </form>
 </div>
 
     <div class="footersf">
         <a href="#" class="Ratingsf">Give Us Your Feedback :)</a>
         <h3 class="contactsf">Contact Us: </h3>
-        <img src="email.png" alt="Logo" class="gmailsf">
+        <img src="../Images/email.png" alt="Logo" class="gmailsf">
         <p class="emailsf">creaturepedia@gmail.com</p> 
         
         
     </div>
-<script>const thankYouButton = document.getElementsById('thankYouButton');
+<!-- <script>
+const thankYouButton = document.getElementsById('thankYouButton');
 
     thankYouButton.addEventListener('click', () => {
         alert('Thank you!');
     });
-    </script>
+    </script> -->
     
 </body>
 </html>
